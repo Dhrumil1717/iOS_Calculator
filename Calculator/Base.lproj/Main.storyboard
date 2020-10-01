@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20*5+50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWo-pj-EKA">
+                                <rect key="frame" x="20" y="174" width="335" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="CalculationsTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="150" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-g6-BEG">
+                                <rect key="frame" x="20" y="75" width="335" height="84"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0kA-pS-UKA">
+                                <rect key="frame" x="20" y="224.5" width="335" height="422.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pdY-Gh-Jjy">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="72.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="128-fX-az7">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTU-IU-nM5">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="fTU-IU-nM5" secondAttribute="height" multiplier="1:1" id="XtO-3e-6NG"/>
+                                                            <constraint firstAttribute="width" secondItem="fTU-IU-nM5" secondAttribute="height" multiplier="1:1" id="qye-oh-aPq"/>
+                                                        </constraints>
+                                                        <state key="normal" title="C">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                        <variation key="default">
+                                                            <mask key="constraints">
+                                                                <exclude reference="XtO-3e-6NG"/>
+                                                                <exclude reference="qye-oh-aPq"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="heightClass=compact-widthClass=compact">
+                                                            <mask key="constraints">
+                                                                <include reference="XtO-3e-6NG"/>
+                                                            </mask>
+                                                        </variation>
+                                                        <variation key="heightClass=regular-widthClass=compact">
+                                                            <mask key="constraints">
+                                                                <include reference="qye-oh-aPq"/>
+                                                            </mask>
+                                                        </variation>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="fTU-IU-nM5" firstAttribute="leading" secondItem="128-fX-az7" secondAttribute="leading" id="3oL-rh-wCE"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fTU-IU-nM5" secondAttribute="bottom" id="bPJ-gf-NaC"/>
+                                                    <constraint firstItem="fTU-IU-nM5" firstAttribute="top" secondItem="128-fX-az7" secondAttribute="top" id="cEZ-iD-s7A"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fTU-IU-nM5" secondAttribute="trailing" id="vmW-CZ-0fS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2G-cg-7nV">
+                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-c7-qB2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <color key="tintColor" name="newOperatorColor"/>
+                                                        <state key="normal" image="plus.slash.minus" catalog="system">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="VdA-c7-qB2" secondAttribute="trailing" id="7fC-ij-d6J"/>
+                                                    <constraint firstItem="VdA-c7-qB2" firstAttribute="top" secondItem="I2G-cg-7nV" secondAttribute="top" id="DcV-F9-Fgx"/>
+                                                    <constraint firstItem="VdA-c7-qB2" firstAttribute="leading" secondItem="I2G-cg-7nV" secondAttribute="leading" id="dzy-Oa-Ozt"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VdA-c7-qB2" secondAttribute="bottom" id="mto-1M-5Bb"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omR-zx-1X9">
+                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-xg-Dpw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <color key="tintColor" name="newOperatorColor"/>
+                                                        <state key="normal" image="percent" catalog="system">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="HzU-xg-Dpw" secondAttribute="bottom" id="L4f-Lg-yoW"/>
+                                                    <constraint firstItem="HzU-xg-Dpw" firstAttribute="leading" secondItem="omR-zx-1X9" secondAttribute="leading" id="PpZ-U2-9RS"/>
+                                                    <constraint firstAttribute="trailing" secondItem="HzU-xg-Dpw" secondAttribute="trailing" id="hf3-lk-ouH"/>
+                                                    <constraint firstItem="HzU-xg-Dpw" firstAttribute="top" secondItem="omR-zx-1X9" secondAttribute="top" id="jk8-F8-4Ss"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-wa-JZF">
+                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXf-Bg-CPi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <color key="tintColor" name="newOperatorColor"/>
+                                                        <state key="normal" image="divide" catalog="system">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="VXf-Bg-CPi" firstAttribute="leading" secondItem="rB2-wa-JZF" secondAttribute="leading" id="9kA-HD-xl7"/>
+                                                    <constraint firstItem="VXf-Bg-CPi" firstAttribute="top" secondItem="rB2-wa-JZF" secondAttribute="top" id="9r6-ts-o3m"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VXf-Bg-CPi" secondAttribute="trailing" id="H3K-aK-c7B"/>
+                                                    <constraint firstAttribute="bottom" secondItem="VXf-Bg-CPi" secondAttribute="bottom" id="Msc-m0-ALf"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Sw-X14">
+                                        <rect key="frame" x="0.0" y="87.5" width="335" height="72.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUH-1C-4Hq">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-WW-Pwk">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="7">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="bvb-WW-Pwk" firstAttribute="leading" secondItem="HUH-1C-4Hq" secondAttribute="leading" id="1qI-b1-Mkl"/>
+                                                    <constraint firstAttribute="trailing" secondItem="bvb-WW-Pwk" secondAttribute="trailing" id="RLp-El-Wa0"/>
+                                                    <constraint firstItem="bvb-WW-Pwk" firstAttribute="top" secondItem="HUH-1C-4Hq" secondAttribute="top" id="YNx-4f-ScN"/>
+                                                    <constraint firstAttribute="bottom" secondItem="bvb-WW-Pwk" secondAttribute="bottom" id="fMb-OB-bcN"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xl-pf-xdp">
+                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej2-ie-WYv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="8">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="ej2-ie-WYv" secondAttribute="trailing" id="4x6-vW-ZHu"/>
+                                                    <constraint firstItem="ej2-ie-WYv" firstAttribute="top" secondItem="0Xl-pf-xdp" secondAttribute="top" id="BGW-1r-d1o"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ej2-ie-WYv" secondAttribute="bottom" id="P7w-X2-YbJ"/>
+                                                    <constraint firstItem="ej2-ie-WYv" firstAttribute="leading" secondItem="0Xl-pf-xdp" secondAttribute="leading" id="iCf-lq-joY"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szB-BR-BuX">
+                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-J2-KZY">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="9">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Wgd-J2-KZY" secondAttribute="bottom" id="DCI-HV-PM3"/>
+                                                    <constraint firstItem="Wgd-J2-KZY" firstAttribute="leading" secondItem="szB-BR-BuX" secondAttribute="leading" id="WGW-qe-1FT"/>
+                                                    <constraint firstItem="Wgd-J2-KZY" firstAttribute="top" secondItem="szB-BR-BuX" secondAttribute="top" id="Z4K-xr-GB4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Wgd-J2-KZY" secondAttribute="trailing" id="gMc-yg-a4S"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23Y-a3-xsk">
+                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-X0-rwd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <color key="tintColor" name="newOperatorColor"/>
+                                                        <state key="normal" image="multiply" catalog="system">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Cc4-X0-rwd" firstAttribute="leading" secondItem="23Y-a3-xsk" secondAttribute="leading" id="FFe-uB-kbV"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Cc4-X0-rwd" secondAttribute="bottom" id="PYp-rE-7wA"/>
+                                                    <constraint firstItem="Cc4-X0-rwd" firstAttribute="top" secondItem="23Y-a3-xsk" secondAttribute="top" id="YG0-6m-Oki"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Cc4-X0-rwd" secondAttribute="trailing" id="at7-yV-49x"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-i3-15Q">
+                                        <rect key="frame" x="0.0" y="175" width="335" height="72.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKZ-5J-gLX">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-x5-iFS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="Ocn-x5-iFS" secondAttribute="bottom" id="63k-rt-xAZ"/>
+                                                    <constraint firstItem="Ocn-x5-iFS" firstAttribute="leading" secondItem="eKZ-5J-gLX" secondAttribute="leading" id="CM2-5I-j5C"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Ocn-x5-iFS" secondAttribute="trailing" id="EbZ-O9-KhQ"/>
+                                                    <constraint firstItem="Ocn-x5-iFS" firstAttribute="top" secondItem="eKZ-5J-gLX" secondAttribute="top" id="S0V-zW-R0s"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jde-0e-Lpb">
+                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRS-31-xD0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="5">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="cRS-31-xD0" secondAttribute="trailing" id="8nv-mt-syn"/>
+                                                    <constraint firstAttribute="bottom" secondItem="cRS-31-xD0" secondAttribute="bottom" id="gg5-iw-CMf"/>
+                                                    <constraint firstItem="cRS-31-xD0" firstAttribute="leading" secondItem="Jde-0e-Lpb" secondAttribute="leading" id="gwb-2D-JOX"/>
+                                                    <constraint firstItem="cRS-31-xD0" firstAttribute="top" secondItem="Jde-0e-Lpb" secondAttribute="top" id="k1a-Y1-cc2"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="412-Az-anH">
+                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN4-yC-JcV">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
+                                                        <state key="normal" title="6">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="WN4-yC-JcV" firstAttribute="top" secondItem="412-Az-anH" secondAttribute="top" id="7lK-4e-LpB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="WN4-yC-JcV" secondAttribute="trailing" id="Igf-z1-PXL"/>
+                                                    <constraint firstItem="WN4-yC-JcV" firstAttribute="leading" secondItem="412-Az-anH" secondAttribute="leading" id="ea3-D9-OLP"/>
+                                                    <constraint firstAttribute="bottom" secondItem="WN4-yC-JcV" secondAttribute="bottom" id="xPs-5i-xDO"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sh-LO-kCT">
+                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTm-f2-6jw">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="-">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="fTm-f2-6jw" firstAttribute="top" secondItem="9sh-LO-kCT" secondAttribute="top" id="5Et-AR-tdw"/>
+                                                    <constraint firstAttribute="trailing" secondItem="fTm-f2-6jw" secondAttribute="trailing" id="beb-iX-fpK"/>
+                                                    <constraint firstItem="fTm-f2-6jw" firstAttribute="leading" secondItem="9sh-LO-kCT" secondAttribute="leading" id="dMD-73-aux"/>
+                                                    <constraint firstAttribute="bottom" secondItem="fTm-f2-6jw" secondAttribute="bottom" id="sIM-Yh-amR"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="huA-L4-oET">
+                                        <rect key="frame" x="0.0" y="262.5" width="335" height="72.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grg-oJ-C5V">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKy-KH-4kG">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="pKy-KH-4kG" firstAttribute="top" secondItem="Grg-oJ-C5V" secondAttribute="top" id="5zP-18-0ag"/>
+                                                    <constraint firstAttribute="trailing" secondItem="pKy-KH-4kG" secondAttribute="trailing" id="EFr-JC-OYL"/>
+                                                    <constraint firstItem="pKy-KH-4kG" firstAttribute="leading" secondItem="Grg-oJ-C5V" secondAttribute="leading" id="Grr-tj-6tz"/>
+                                                    <constraint firstAttribute="bottom" secondItem="pKy-KH-4kG" secondAttribute="bottom" id="XYE-5H-eiw"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-hV-6ki">
+                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iak-7I-0an">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="Iak-7I-0an" firstAttribute="leading" secondItem="hDJ-hV-6ki" secondAttribute="leading" id="A4t-Vx-gOo"/>
+                                                    <constraint firstAttribute="bottom" secondItem="Iak-7I-0an" secondAttribute="bottom" id="FNn-hw-tTk"/>
+                                                    <constraint firstItem="Iak-7I-0an" firstAttribute="top" secondItem="hDJ-hV-6ki" secondAttribute="top" id="k6J-8X-ONB"/>
+                                                    <constraint firstAttribute="trailing" secondItem="Iak-7I-0an" secondAttribute="trailing" id="oT8-Bp-dAa"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L15-k5-1md">
+                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32F-RQ-phX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
+                                                        <state key="normal" title="3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="32F-RQ-phX" secondAttribute="bottom" id="0nr-TC-M9J"/>
+                                                    <constraint firstItem="32F-RQ-phX" firstAttribute="leading" secondItem="L15-k5-1md" secondAttribute="leading" id="Qgq-Ip-Sm5"/>
+                                                    <constraint firstAttribute="trailing" secondItem="32F-RQ-phX" secondAttribute="trailing" id="WYM-7a-QY0"/>
+                                                    <constraint firstItem="32F-RQ-phX" firstAttribute="top" secondItem="L15-k5-1md" secondAttribute="top" id="YAi-5z-WXf"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPa-ZT-V6b">
+                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xE-Zc-n3Z">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="+">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="2xE-Zc-n3Z" secondAttribute="trailing" id="0on-Q1-Vbd"/>
+                                                    <constraint firstAttribute="bottom" secondItem="2xE-Zc-n3Z" secondAttribute="bottom" id="KR3-Jm-yHE"/>
+                                                    <constraint firstItem="2xE-Zc-n3Z" firstAttribute="leading" secondItem="OPa-ZT-V6b" secondAttribute="leading" id="Lj9-pH-PuD"/>
+                                                    <constraint firstItem="2xE-Zc-n3Z" firstAttribute="top" secondItem="OPa-ZT-V6b" secondAttribute="top" id="qc9-WO-agV"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="40H-Xu-4jw">
+                                        <rect key="frame" x="0.0" y="350" width="335" height="72.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYd-uK-H0O">
+                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-pI-UWi">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="0">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="hwI-pI-UWi" firstAttribute="leading" secondItem="RYd-uK-H0O" secondAttribute="leading" id="4xy-Zk-7jK"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hwI-pI-UWi" secondAttribute="trailing" id="AIY-O6-xLw"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hwI-pI-UWi" secondAttribute="bottom" id="BLU-8c-Cak"/>
+                                                    <constraint firstItem="hwI-pI-UWi" firstAttribute="top" secondItem="RYd-uK-H0O" secondAttribute="top" id="sFk-xI-bHI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-dK-nIk">
+                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Db-1v-c1m">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title=".">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="0Db-1v-c1m" secondAttribute="trailing" id="MA4-2M-2kv"/>
+                                                    <constraint firstAttribute="bottom" secondItem="0Db-1v-c1m" secondAttribute="bottom" id="bCx-9x-Ued"/>
+                                                    <constraint firstItem="0Db-1v-c1m" firstAttribute="leading" secondItem="7Rv-dK-nIk" secondAttribute="leading" id="d6c-KI-Rpa"/>
+                                                    <constraint firstItem="0Db-1v-c1m" firstAttribute="top" secondItem="7Rv-dK-nIk" secondAttribute="top" id="rYr-DF-KOE"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjk-Tq-Kri">
+                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-Vu-JYh">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <color key="tintColor" name="newOperatorColor"/>
+                                                        <state key="normal" image="delete.left" catalog="system">
+                                                            <color key="titleColor" name="OperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="8Pg-Vu-JYh" firstAttribute="leading" secondItem="fjk-Tq-Kri" secondAttribute="leading" id="ejw-JW-gAL"/>
+                                                    <constraint firstAttribute="trailing" secondItem="8Pg-Vu-JYh" secondAttribute="trailing" id="hNz-Kj-a1R"/>
+                                                    <constraint firstAttribute="bottom" secondItem="8Pg-Vu-JYh" secondAttribute="bottom" id="veI-VR-elp"/>
+                                                    <constraint firstItem="8Pg-Vu-JYh" firstAttribute="top" secondItem="fjk-Tq-Kri" secondAttribute="top" id="ybF-AO-FFS"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VA3-DV-TpT">
+                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G3-R2-Wta">
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <state key="normal" title="=">
+                                                            <color key="titleColor" name="newOperatorColor"/>
+                                                            <color key="titleShadowColor" name="CustomShadowColor"/>
+                                                        </state>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="trailing" secondItem="6G3-R2-Wta" secondAttribute="trailing" id="1hP-ir-tJp"/>
+                                                    <constraint firstAttribute="bottom" secondItem="6G3-R2-Wta" secondAttribute="bottom" id="EPi-Zq-Ehb"/>
+                                                    <constraint firstItem="6G3-R2-Wta" firstAttribute="top" secondItem="VA3-DV-TpT" secondAttribute="top" id="ayZ-Q9-BWK"/>
+                                                    <constraint firstItem="6G3-R2-Wta" firstAttribute="leading" secondItem="VA3-DV-TpT" secondAttribute="leading" id="b7g-Wp-2Fw"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kA-pS-UKA" secondAttribute="trailing" constant="20" id="4m7-Vp-Iz6"/>
+                            <constraint firstItem="DaV-g6-BEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Cyh-YQ-ugG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0kA-pS-UKA" secondAttribute="bottom" constant="20" id="Ddk-aZ-DYk"/>
+                            <constraint firstItem="0kA-pS-UKA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ezq-Lw-PbB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0kA-pS-UKA" secondAttribute="trailing" constant="20" id="GKe-wz-KGf"/>
+                            <constraint firstItem="kWo-pj-EKA" firstAttribute="leading" secondItem="DaV-g6-BEG" secondAttribute="leading" id="GbQ-6z-8d8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DaV-g6-BEG" secondAttribute="trailing" constant="20" id="IWh-b6-zqN"/>
+                            <constraint firstItem="0kA-pS-UKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VLh-lk-tZZ"/>
+                            <constraint firstItem="0kA-pS-UKA" firstAttribute="top" secondItem="kWo-pj-EKA" secondAttribute="bottom" constant="30" id="ZIn-Mv-Uww"/>
+                            <constraint firstItem="kWo-pj-EKA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fBJ-JK-Ac6"/>
+                            <constraint firstItem="DaV-g6-BEG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fMF-uU-XDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kWo-pj-EKA" secondAttribute="trailing" constant="20" id="g5N-Aa-SlS"/>
+                            <constraint firstItem="0kA-pS-UKA" firstAttribute="leading" secondItem="DaV-g6-BEG" secondAttribute="trailing" constant="30" id="na4-k3-rAh"/>
+                            <constraint firstItem="kWo-pj-EKA" firstAttribute="top" secondItem="DaV-g6-BEG" secondAttribute="bottom" constant="15" id="q9y-wH-ImP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0kA-pS-UKA" secondAttribute="bottom" constant="20" id="r5P-0P-3OV"/>
+                            <constraint firstItem="DaV-g6-BEG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="75" id="tgk-GI-6cV"/>
+                            <constraint firstItem="DaV-g6-BEG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="uye-MF-HBb"/>
+                            <constraint firstItem="kWo-pj-EKA" firstAttribute="top" secondItem="DaV-g6-BEG" secondAttribute="bottom" constant="20" id="wBr-Ji-dQU"/>
+                            <constraint firstItem="kWo-pj-EKA" firstAttribute="trailing" secondItem="DaV-g6-BEG" secondAttribute="trailing" id="zIc-Yu-wnI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="4m7-Vp-Iz6"/>
+                                <exclude reference="Ddk-aZ-DYk"/>
+                                <exclude reference="GKe-wz-KGf"/>
+                                <exclude reference="IWh-b6-zqN"/>
+                                <exclude reference="g5N-Aa-SlS"/>
+                                <exclude reference="r5P-0P-3OV"/>
+                                <exclude reference="Cyh-YQ-ugG"/>
+                                <exclude reference="fMF-uU-XDI"/>
+                                <exclude reference="tgk-GI-6cV"/>
+                                <exclude reference="uye-MF-HBb"/>
+                                <exclude reference="GbQ-6z-8d8"/>
+                                <exclude reference="fBJ-JK-Ac6"/>
+                                <exclude reference="q9y-wH-ImP"/>
+                                <exclude reference="wBr-Ji-dQU"/>
+                                <exclude reference="zIc-Yu-wnI"/>
+                                <exclude reference="Ezq-Lw-PbB"/>
+                                <exclude reference="VLh-lk-tZZ"/>
+                                <exclude reference="ZIn-Mv-Uww"/>
+                                <exclude reference="na4-k3-rAh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="GKe-wz-KGf"/>
+                                <include reference="r5P-0P-3OV"/>
+                                <include reference="fMF-uU-XDI"/>
+                                <include reference="uye-MF-HBb"/>
+                                <include reference="GbQ-6z-8d8"/>
+                                <include reference="wBr-Ji-dQU"/>
+                                <include reference="zIc-Yu-wnI"/>
+                                <include reference="Ezq-Lw-PbB"/>
+                                <include reference="na4-k3-rAh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="4m7-Vp-Iz6"/>
+                                <include reference="Ddk-aZ-DYk"/>
+                                <include reference="IWh-b6-zqN"/>
+                                <include reference="g5N-Aa-SlS"/>
+                                <include reference="Cyh-YQ-ugG"/>
+                                <include reference="tgk-GI-6cV"/>
+                                <include reference="fBJ-JK-Ac6"/>
+                                <include reference="q9y-wH-ImP"/>
+                                <include reference="VLh-lk-tZZ"/>
+                                <include reference="ZIn-Mv-Uww"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="fTU-IU-nM5" id="tDh-ec-dBG"/>
+                        <outlet property="btn10" destination="cRS-31-xD0" id="fy5-RE-Joz"/>
+                        <outlet property="btn11" destination="WN4-yC-JcV" id="cDR-BA-Mfh"/>
+                        <outlet property="btn12" destination="fTm-f2-6jw" id="QFP-Pf-A8e"/>
+                        <outlet property="btn13" destination="pKy-KH-4kG" id="ngB-hR-e2x"/>
+                        <outlet property="btn14" destination="Iak-7I-0an" id="f5j-Kb-D9J"/>
+                        <outlet property="btn15" destination="32F-RQ-phX" id="xKj-8Z-tTI"/>
+                        <outlet property="btn16" destination="2xE-Zc-n3Z" id="pa2-qW-610"/>
+                        <outlet property="btn17" destination="hwI-pI-UWi" id="gMX-4z-gud"/>
+                        <outlet property="btn18" destination="0Db-1v-c1m" id="Xpa-bg-hwn"/>
+                        <outlet property="btn19" destination="8Pg-Vu-JYh" id="scj-xj-b5Y"/>
+                        <outlet property="btn2" destination="VdA-c7-qB2" id="KRT-SW-w4d"/>
+                        <outlet property="btn20" destination="6G3-R2-Wta" id="bvV-Gl-t65"/>
+                        <outlet property="btn3" destination="HzU-xg-Dpw" id="Nxq-iY-9kC"/>
+                        <outlet property="btn4" destination="VXf-Bg-CPi" id="I25-2O-LTA"/>
+                        <outlet property="btn5" destination="bvb-WW-Pwk" id="cs5-1r-z8A"/>
+                        <outlet property="btn6" destination="ej2-ie-WYv" id="ql6-As-eff"/>
+                        <outlet property="btn7" destination="Wgd-J2-KZY" id="rkk-bj-K4E"/>
+                        <outlet property="btn8" destination="Cc4-X0-rwd" id="8AT-wv-Hzu"/>
+                        <outlet property="btn9" destination="Ocn-x5-iFS" id="lR5-jG-dhk"/>
+                        <outlet property="lblCalculation" destination="kWo-pj-EKA" id="3d4-P5-L5n"/>
+                        <outlet property="lblResult" destination="DaV-g6-BEG" id="uhy-X5-1Lw"/>
+                        <outlet property="stackView" destination="0kA-pS-UKA" id="C7a-vv-NBd"/>
+                        <outlet property="stackView1" destination="pdY-Gh-Jjy" id="hdo-pW-Hry"/>
+                        <outletCollection property="allDigitsCollection" destination="VdA-c7-qB2" collectionClass="NSMutableArray" id="ZTf-CJ-cvX"/>
+                        <outletCollection property="allDigitsCollection" destination="HzU-xg-Dpw" collectionClass="NSMutableArray" id="KHc-E3-6lC"/>
+                        <outletCollection property="allDigitsCollection" destination="VXf-Bg-CPi" collectionClass="NSMutableArray" id="txg-cb-PBg"/>
+                        <outletCollection property="allDigitsCollection" destination="bvb-WW-Pwk" collectionClass="NSMutableArray" id="S1F-0C-Bjd"/>
+                        <outletCollection property="allDigitsCollection" destination="ej2-ie-WYv" collectionClass="NSMutableArray" id="8lQ-Ee-202"/>
+                        <outletCollection property="allDigitsCollection" destination="Wgd-J2-KZY" collectionClass="NSMutableArray" id="4oq-6b-FKq"/>
+                        <outletCollection property="allDigitsCollection" destination="Cc4-X0-rwd" collectionClass="NSMutableArray" id="ILk-oD-j0O"/>
+                        <outletCollection property="allDigitsCollection" destination="Ocn-x5-iFS" collectionClass="NSMutableArray" id="sUZ-X9-RUB"/>
+                        <outletCollection property="allDigitsCollection" destination="cRS-31-xD0" collectionClass="NSMutableArray" id="lJi-QD-ts6"/>
+                        <outletCollection property="allDigitsCollection" destination="WN4-yC-JcV" collectionClass="NSMutableArray" id="1S0-gN-1ab"/>
+                        <outletCollection property="allDigitsCollection" destination="fTm-f2-6jw" collectionClass="NSMutableArray" id="Zch-FY-oqA"/>
+                        <outletCollection property="allDigitsCollection" destination="pKy-KH-4kG" collectionClass="NSMutableArray" id="ODQ-Yf-c29"/>
+                        <outletCollection property="allDigitsCollection" destination="Iak-7I-0an" collectionClass="NSMutableArray" id="px6-Jb-bPc"/>
+                        <outletCollection property="allDigitsCollection" destination="32F-RQ-phX" collectionClass="NSMutableArray" id="sOW-9O-wH8"/>
+                        <outletCollection property="allDigitsCollection" destination="2xE-Zc-n3Z" collectionClass="NSMutableArray" id="b4b-e3-4qj"/>
+                        <outletCollection property="allDigitsCollection" destination="hwI-pI-UWi" collectionClass="NSMutableArray" id="3AZ-ma-wK0"/>
+                        <outletCollection property="allDigitsCollection" destination="0Db-1v-c1m" collectionClass="NSMutableArray" id="02z-cq-Udh"/>
+                        <outletCollection property="allDigitsCollection" destination="8Pg-Vu-JYh" collectionClass="NSMutableArray" id="gdc-SF-q5O"/>
+                        <outletCollection property="allDigitsCollection" destination="6G3-R2-Wta" collectionClass="NSMutableArray" id="OLO-0x-6uk"/>
+                        <outletCollection property="viewShadow" destination="I2G-cg-7nV" collectionClass="NSMutableArray" id="K5G-mj-2G8"/>
+                        <outletCollection property="viewShadow" destination="omR-zx-1X9" collectionClass="NSMutableArray" id="jQg-vf-ac5"/>
+                        <outletCollection property="viewShadow" destination="rB2-wa-JZF" collectionClass="NSMutableArray" id="Ri1-Dj-LWR"/>
+                        <outletCollection property="allDigitsCollection" destination="fTU-IU-nM5" collectionClass="NSMutableArray" id="Wmv-xd-Hxv"/>
+                        <outletCollection property="viewShadow" destination="128-fX-az7" collectionClass="NSMutableArray" id="bx1-Tb-6L9"/>
+                        <outletCollection property="viewShadow" destination="HUH-1C-4Hq" collectionClass="NSMutableArray" id="xdv-pD-ZUf"/>
+                        <outletCollection property="viewShadow" destination="0Xl-pf-xdp" collectionClass="NSMutableArray" id="A9O-aS-O0f"/>
+                        <outletCollection property="viewShadow" destination="szB-BR-BuX" collectionClass="NSMutableArray" id="qsT-uw-j8V"/>
+                        <outletCollection property="viewShadow" destination="23Y-a3-xsk" collectionClass="NSMutableArray" id="9QN-qL-gpZ"/>
+                        <outletCollection property="viewShadow" destination="eKZ-5J-gLX" collectionClass="NSMutableArray" id="woW-0Z-Dip"/>
+                        <outletCollection property="viewShadow" destination="Jde-0e-Lpb" collectionClass="NSMutableArray" id="iL8-BM-J9h"/>
+                        <outletCollection property="viewShadow" destination="412-Az-anH" collectionClass="NSMutableArray" id="udk-vt-2dU"/>
+                        <outletCollection property="viewShadow" destination="9sh-LO-kCT" collectionClass="NSMutableArray" id="VGJ-Nk-N4C"/>
+                        <outletCollection property="viewShadow" destination="Grg-oJ-C5V" collectionClass="NSMutableArray" id="5fW-b3-bS1"/>
+                        <outletCollection property="viewShadow" destination="hDJ-hV-6ki" collectionClass="NSMutableArray" id="7gt-O7-N4c"/>
+                        <outletCollection property="viewShadow" destination="L15-k5-1md" collectionClass="NSMutableArray" id="rom-UX-KXI"/>
+                        <outletCollection property="viewShadow" destination="OPa-ZT-V6b" collectionClass="NSMutableArray" id="SYH-Cl-Pk5"/>
+                        <outletCollection property="viewShadow" destination="RYd-uK-H0O" collectionClass="NSMutableArray" id="K4I-ou-n6V"/>
+                        <outletCollection property="viewShadow" destination="7Rv-dK-nIk" collectionClass="NSMutableArray" id="BDe-za-hLm"/>
+                        <outletCollection property="viewShadow" destination="fjk-Tq-Kri" collectionClass="NSMutableArray" id="dcq-8o-FEV"/>
+                        <outletCollection property="viewShadow" destination="VA3-DV-TpT" collectionClass="NSMutableArray" id="dos-Md-QfX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1446.9265367316343" y="-39.200000000000003"/>
+        </scene>
+        <!--View Controller2-->
+        <scene sceneID="eD9-Rb-XHf">
+            <objects>
+                <viewController id="mSR-8D-nf2" customClass="ViewController2" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="umc-ch-Gt3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hGJ-vH-07T">
+                                <rect key="frame" x="50" y="100" width="275" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="igu-Z0-ecR">
+                                        <rect key="frame" x="0.0" y="0.0" width="275" height="100"/>
+                                        <color key="backgroundColor" name="NewBackgrondColor"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="btnclick:" destination="mSR-8D-nf2" eventType="touchUpInside" id="3oe-wU-cHc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="igu-Z0-ecR" firstAttribute="leading" secondItem="hGJ-vH-07T" secondAttribute="leading" id="4kl-Vt-tQ5"/>
+                                    <constraint firstAttribute="height" constant="100" id="Qum-kB-91O"/>
+                                    <constraint firstAttribute="bottom" secondItem="igu-Z0-ecR" secondAttribute="bottom" id="cBa-QX-Ddf"/>
+                                    <constraint firstAttribute="trailing" secondItem="igu-Z0-ecR" secondAttribute="trailing" id="oRg-0m-Ywv"/>
+                                    <constraint firstItem="igu-Z0-ecR" firstAttribute="top" secondItem="hGJ-vH-07T" secondAttribute="top" id="sQ7-LT-ecc"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jq1-4Q-K0o">
+                                <rect key="frame" x="144" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btnclick:" destination="mSR-8D-nf2" eventType="touchUpInside" id="9hQ-23-WZZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="NewBackgrondColor"/>
+                        <constraints>
+                            <constraint firstItem="hGJ-vH-07T" firstAttribute="leading" secondItem="WB4-8A-TsG" secondAttribute="leading" constant="50" id="4ZT-Zj-h4v"/>
+                            <constraint firstItem="hGJ-vH-07T" firstAttribute="top" secondItem="WB4-8A-TsG" secondAttribute="top" constant="100" id="7o6-Gj-eTe"/>
+                            <constraint firstItem="WB4-8A-TsG" firstAttribute="trailing" secondItem="hGJ-vH-07T" secondAttribute="trailing" constant="50" id="QAx-2Q-jSg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="WB4-8A-TsG"/>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="igu-Z0-ecR" id="fH0-W2-5R6"/>
+                        <outlet property="view1" destination="hGJ-vH-07T" id="kUw-8v-r8r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c3J-6P-Qgq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2700" y="-40"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="divide" catalog="system" width="128" height="103"/>
+        <image name="multiply" catalog="system" width="128" height="111"/>
+        <image name="percent" catalog="system" width="128" height="118"/>
+        <image name="plus.slash.minus" catalog="system" width="128" height="115"/>
+        <namedColor name="CalculationsTextColor">
+            <color red="0.62745098039215685" green="0.63137254901960782" blue="0.63921568627450975" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CustomShadowColor">
+            <color red="0.8666666666666667" green="0.92941176470588238" blue="0.99215686274509807" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="NewBackgrondColor">
+            <color red="0.21568627450980393" green="0.2627450980392157" blue="0.32549019607843138" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="OperatorColor">
+            <color red="0.090196078431372548" green="0.5607843137254902" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="newOperatorColor">
+            <color red="0.41960784313725491" green="0.46274509803921571" blue="0.47843137254901963" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
