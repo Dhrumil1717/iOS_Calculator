@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -13,32 +13,32 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20*5+50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kWo-pj-EKA">
-                                <rect key="frame" x="20" y="174" width="335" height="20.5"/>
+                                <rect key="frame" x="20" y="320.5" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" name="CalculationsTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="150" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-g6-BEG">
-                                <rect key="frame" x="20" y="75" width="335" height="84"/>
+                                <rect key="frame" x="20" y="119" width="374" height="186.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="61"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="0kA-pS-UKA">
-                                <rect key="frame" x="20" y="224.5" width="335" height="422.5"/>
+                                <rect key="frame" x="20" y="371" width="374" height="471"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="pdY-Gh-Jjy">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="82"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="128-fX-az7">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTU-IU-nM5">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="fTU-IU-nM5" secondAttribute="height" multiplier="1:1" id="XtO-3e-6NG"/>
@@ -75,10 +75,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I2G-cg-7nV">
-                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="97.5" y="0.0" width="82" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-c7-qB2">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="plus.slash.minus" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -95,10 +95,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="omR-zx-1X9">
-                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="194.5" y="0.0" width="82.5" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-xg-Dpw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="percent" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -115,10 +115,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rB2-wa-JZF">
-                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="292" y="0.0" width="82" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXf-Bg-CPi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="divide" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -137,13 +137,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="UYc-Sw-X14">
-                                        <rect key="frame" x="0.0" y="87.5" width="335" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="97" width="374" height="82.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUH-1C-4Hq">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvb-WW-Pwk">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                         <state key="normal" title="7">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -159,10 +159,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Xl-pf-xdp">
-                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="97.5" y="0.0" width="82" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ej2-ie-WYv">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82.5"/>
                                                         <state key="normal" title="8">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -178,10 +178,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="szB-BR-BuX">
-                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="194.5" y="0.0" width="82.5" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wgd-J2-KZY">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                         <state key="normal" title="9">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -197,10 +197,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="23Y-a3-xsk">
-                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="292" y="0.0" width="82" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-X0-rwd">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82.5"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="multiply" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -219,13 +219,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Bl9-i3-15Q">
-                                        <rect key="frame" x="0.0" y="175" width="335" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="194.5" width="374" height="82"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eKZ-5J-gLX">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ocn-x5-iFS">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                         <state key="normal" title="4">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -241,10 +241,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jde-0e-Lpb">
-                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="97.5" y="0.0" width="82" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRS-31-xD0">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                         <state key="normal" title="5">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -260,10 +260,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="412-Az-anH">
-                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="194.5" y="0.0" width="82.5" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WN4-yC-JcV">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                         <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="17"/>
                                                         <state key="normal" title="6">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -280,10 +280,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9sh-LO-kCT">
-                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="292" y="0.0" width="82" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTm-f2-6jw">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                         <state key="normal" title="-">
                                                             <color key="titleColor" name="newOperatorColor"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -301,13 +301,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="huA-L4-oET">
-                                        <rect key="frame" x="0.0" y="262.5" width="335" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="291.5" width="374" height="82.5"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Grg-oJ-C5V">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pKy-KH-4kG">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                         <state key="normal" title="1">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -323,10 +323,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hDJ-hV-6ki">
-                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="97.5" y="0.0" width="82" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iak-7I-0an">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82.5"/>
                                                         <state key="normal" title="2">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -342,10 +342,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L15-k5-1md">
-                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="194.5" y="0.0" width="82.5" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32F-RQ-phX">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82.5"/>
                                                         <fontDescription key="fontDescription" name="Damascus" family="Damascus" pointSize="17"/>
                                                         <state key="normal" title="3">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -362,10 +362,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OPa-ZT-V6b">
-                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="292" y="0.0" width="82" height="82.5"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xE-Zc-n3Z">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82.5"/>
                                                         <state key="normal" title="+">
                                                             <color key="titleColor" name="newOperatorColor"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -383,13 +383,13 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="40H-Xu-4jw">
-                                        <rect key="frame" x="0.0" y="350" width="335" height="72.5"/>
+                                        <rect key="frame" x="0.0" y="389" width="374" height="82"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RYd-uK-H0O">
-                                                <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hwI-pI-UWi">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                         <state key="normal" title="0">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -405,10 +405,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Rv-dK-nIk">
-                                                <rect key="frame" x="87.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="97.5" y="0.0" width="82" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Db-1v-c1m">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                         <state key="normal" title=".">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -424,10 +424,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fjk-Tq-Kri">
-                                                <rect key="frame" x="175" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="194.5" y="0.0" width="82.5" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-Vu-JYh">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82.5" height="82"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="delete.left" catalog="system">
                                                             <color key="titleColor" name="OperatorColor"/>
@@ -444,10 +444,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VA3-DV-TpT">
-                                                <rect key="frame" x="262.5" y="0.0" width="72.5" height="72.5"/>
+                                                <rect key="frame" x="292" y="0.0" width="82" height="82"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G3-R2-Wta">
-                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="82" height="82"/>
                                                         <state key="normal" title="=">
                                                             <color key="titleColor" name="newOperatorColor"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -565,7 +565,6 @@
                         <outlet property="lblCalculation" destination="kWo-pj-EKA" id="3d4-P5-L5n"/>
                         <outlet property="lblResult" destination="DaV-g6-BEG" id="uhy-X5-1Lw"/>
                         <outlet property="stackView" destination="0kA-pS-UKA" id="C7a-vv-NBd"/>
-                        <outlet property="stackView1" destination="pdY-Gh-Jjy" id="hdo-pW-Hry"/>
                         <outletCollection property="allDigitsCollection" destination="VdA-c7-qB2" collectionClass="NSMutableArray" id="ZTf-CJ-cvX"/>
                         <outletCollection property="allDigitsCollection" destination="HzU-xg-Dpw" collectionClass="NSMutableArray" id="KHc-E3-6lC"/>
                         <outletCollection property="allDigitsCollection" destination="VXf-Bg-CPi" collectionClass="NSMutableArray" id="txg-cb-PBg"/>
