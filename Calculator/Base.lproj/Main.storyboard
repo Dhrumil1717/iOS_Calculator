@@ -24,7 +24,7 @@
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DaV-g6-BEG">
                                 <rect key="frame" x="20" y="75" width="335" height="104.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="45"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -44,6 +44,7 @@
                                                             <constraint firstAttribute="width" secondItem="fTU-IU-nM5" secondAttribute="height" multiplier="1:1" id="XtO-3e-6NG"/>
                                                             <constraint firstAttribute="width" secondItem="fTU-IU-nM5" secondAttribute="height" multiplier="1:1" id="qye-oh-aPq"/>
                                                         </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <state key="normal" title="C">
                                                             <color key="titleColor" name="newOperatorColor"/>
                                                             <color key="titleShadowColor" name="CustomShadowColor"/>
@@ -82,6 +83,7 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdA-c7-qB2">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="plus.slash.minus" catalog="system"/>
                                                         <connections>
@@ -102,6 +104,7 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HzU-xg-Dpw">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="percent" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -125,6 +128,7 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXf-Bg-CPi">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="divide" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -219,6 +223,7 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cc4-X0-rwd">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="multiply" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -314,6 +319,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fTm-f2-6jw">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="minus" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -409,6 +415,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2xE-Zc-n3Z">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="plus" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>
@@ -481,6 +488,7 @@
                                                 <subviews>
                                                     <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Pg-Vu-JYh">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="delete.left" catalog="system">
                                                             <color key="titleColor" name="OperatorColor"/>
@@ -504,6 +512,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6G3-R2-Wta">
                                                         <rect key="frame" x="0.0" y="0.0" width="72.5" height="72.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                         <color key="tintColor" name="newOperatorColor"/>
                                                         <state key="normal" image="equal" catalog="system">
                                                             <color key="titleColor" name="newOperatorColor"/>

@@ -1,19 +1,20 @@
-//
+
 //  ViewController.swift
 //  File Name: Calculator
 //  Author's name: Created by Dhrumil Malaviya on 2020-09-29
 //  StudentID :301058391
-//  App description: A simple mobile calculator UI is built in this version. Additional features will be added in upcoming versions
-//  Version 1.0
+//  App description: A simple mobile calculator UI is built in the older version. Basic functionalities  such as addition
+//  subtraction Multiplication Division and Percentage are added in this version
+//  Version 1.01
 
 import UIKit
 
 extension Float
 {
-    var clean : String {return String(self).replacingOccurrences(of: "0*$", with: "", options: .regularExpression)}
-
-        
-        //self.truncatingRemainder(dividingBy:1) == 0 ? String (format: "%.0f", self) : String (format: "%.8f",self.clean)  }
+    var clean : String
+    {
+        return String(self).replacingOccurrences(of: ".0*$", with: "", options: .regularExpression)
+    }
 }
 class ViewController: UIViewController
 {
@@ -52,13 +53,10 @@ class ViewController: UIViewController
     @IBOutlet weak var btnDecimal: UIButton!
     @IBOutlet weak var btnEquals: UIButton!
     @IBOutlet weak var stackView: UIStackView!
-   
-  
-
     @IBOutlet var allDigitsCollection: [UIButton]!
     @IBOutlet var viewShadow: [UIView]!
     
-    @IBAction func Number_Button_Clicked(_ sender: UIButton)
+    @IBAction func Number_Button_Clicked(_ sender: UIButton)   //This listener will activate when a number button is pressed
     {
         
         
@@ -67,6 +65,8 @@ class ViewController: UIViewController
         case "C":
             lblCalculation.text! = "0"
             lblResult.text!="0"
+            currentValue=0
+            previousValue=0
             
         case ".":
             if(!lblCalculation.text!.contains("."))
@@ -90,17 +90,9 @@ class ViewController: UIViewController
             }
                 
         }
-//         if(lblCalculation.text!.contains("."))
-//               {
-//                   print(Double(lblCalculation.text!)!)
-//               }
-//               else
-//               {
-//                   print(Int(lblCalculation.text!)!)
-//               }
     }
     
-    @IBAction func Operator_Button_Clicked(_ sender: UIButton)
+    @IBAction func Operator_Button_Clicked(_ sender: UIButton)                  //This listenr will activate when there an operator is pressed
     {
      
         switch sender.image(for: UIControl.State.normal)
@@ -120,20 +112,20 @@ class ViewController: UIViewController
                 }
             }
         case UIImage(systemName: "divide"):
-               previousValue = Float(lblCalculation.text!)!
+               previousValue = Float(lblResult .text!)!
             lblCalculation.text = "/"
             operation="/"
             isPerforming=true
            
         case UIImage(systemName: "multiply"):
-            previousValue = Float(lblCalculation.text!)!
+            previousValue = Float(lblResult.text!)!
             lblCalculation.text = "*"
             operation="*"
             isPerforming=true
              
             
         case UIImage(systemName: "minus"):
-            previousValue = Float(lblCalculation.text!)!
+            previousValue = currentValue
             lblCalculation.text = "-"
             operation="-"
             isPerforming=true
@@ -141,13 +133,14 @@ class ViewController: UIViewController
               
             
         case UIImage(systemName: "plus"):
-            previousValue = Float(lblCalculation.text!)!
+            previousValue = currentValue            //Float(lblCalculation.text!)!
             lblCalculation.text = "+"
             operation="+"
             isPerforming=true
+            
            
         case UIImage(systemName: "percent"):
-            previousValue = Float(lblCalculation.text!)!
+            previousValue = currentValue
             lblCalculation.text="%"
             operation="%"
             isPerforming=true
@@ -155,34 +148,33 @@ class ViewController: UIViewController
         case UIImage(systemName: "equal"):
             if operation == "+"
            {
-            lblResult.text! = String(previousValue+currentValue)
-            
+            lblResult.text! = (previousValue+currentValue).clean
+           currentValue = (previousValue+currentValue)
             }
                 
             else if operation == "-"
             {
-            lblResult.text! = String(previousValue - currentValue)
+                lblResult.text! = (previousValue - currentValue).clean
+                 currentValue = (previousValue+currentValue)
             }
 
             else if operation == "/"
             {
-            lblResult.text! = String(previousValue/currentValue)
+                lblResult.text! = (previousValue/currentValue).clean
+                 currentValue = (previousValue+currentValue)
             }
 
             else if operation == "*"
             {
-            
                 lblResult.text! = (previousValue * currentValue).clean
-                //value = (previousValue*currentValue)
-                //lblCalculation.text! = String(format: "%.8f",value)
             }
                 
             else if operation == "%"
             {
-               // lblResult.text! = String((previousValue*currentValue)*0.01)
+               lblResult.text! = String((previousValue*currentValue)*0.01)
                 
                 value = (previousValue*currentValue)*0.01
-                lblResult.text! = String(format: "%.8f",value)
+                lblResult.text! = value.clean
                 
             }
 
